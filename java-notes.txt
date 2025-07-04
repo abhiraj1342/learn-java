@@ -1,0 +1,35 @@
+Single line comment in java by using  (//)
+multi line comment in java by using (/**/)
+
+Final Variables-----------------------------
+If you don't want others (or yourself) to overwrite existing values, 
+use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
+
+final int myNum = 15;
+myNum = 20;  // will generate an error: cannot assign a value to a final variable
+
+memory behavoiur--------------------------------------
+Java vs Python: Variable Assignment Behavior
+
+Java (Primitive Types)-------
+
+int x, y, z;
+x = y = z = 50;
+Each of x, y, and z is a separate memory location.
+
+They all store the value 50 independently.
+
+Changing one does not affect the others.
+
+✅ Java copies the value — no shared reference for primitives.
+
+Python----------------------
+
+x = y = z = 50
+Python variables are references to objects, even for numbers.
+
+50 is an immutable object in memory.
+
+All variables x, y, and z point to the same object (50) initially.
+
+
